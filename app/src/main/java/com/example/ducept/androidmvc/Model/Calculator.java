@@ -50,8 +50,8 @@ public class Calculator extends AbstractModel
         notifyObserver(String.valueOf(this.result));
     }
 
-    // Calculation
-    public void calculation()
+    // Calculate
+    public void calculate()
     {
         // If there is no operator, the result is typed
         if(this.operator.equals(""))
@@ -88,5 +88,9 @@ public class Calculator extends AbstractModel
                 }
             }
         }
+        this.operand = "";
+
+        // We start updating
+        notifyObserver(String.valueOf(this.result));
     }
 }
