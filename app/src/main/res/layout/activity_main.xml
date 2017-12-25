@@ -7,12 +7,11 @@
             android:orientation="vertical"
             tools:context=".GridXMLActivity">
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
+        android:id="@+id/tv_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal" />
+        android:text="TextView" />
 
     <LinearLayout
         android:id="@+id/horLayout1"
